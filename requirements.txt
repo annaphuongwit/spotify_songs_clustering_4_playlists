@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+matplotlib
+scikit-learn
+# Uncomment the next line if you want HDBSCAN clustering support
+# hdbscan 

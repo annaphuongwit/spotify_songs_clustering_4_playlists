@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit secrets (if used)
+.streamlit/secrets.toml
+
+# VSCode settings (optional)
+.vscode/ 
