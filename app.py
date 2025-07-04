@@ -104,7 +104,7 @@ else:
     clustering_kwargs = {}
     show_inertia = False
     if model_choice == 'KMeans':
-        n_clusters = st.slider('Select number of clusters (playlists):', min_value=2, max_value=15, value=5)
+        n_clusters = st.slider('Select number of clusters (playlists):', min_value=2, max_value=50, value=5)
         clustering_kwargs['n_clusters'] = n_clusters
         show_inertia = True
     elif model_choice == 'DBSCAN':
@@ -113,7 +113,7 @@ else:
         clustering_kwargs['eps'] = eps
         clustering_kwargs['min_samples'] = min_samples
     elif model_choice == 'AgglomerativeClustering':
-        n_clusters = st.slider('Agglomerative: number of clusters', min_value=2, max_value=15, value=5)
+        n_clusters = st.slider('Agglomerative: number of clusters', min_value=2, max_value=50, value=5)
         linkage = st.selectbox('Agglomerative: linkage', ['ward', 'complete', 'average', 'single'])
         clustering_kwargs['n_clusters'] = n_clusters
         clustering_kwargs['linkage'] = linkage
@@ -124,7 +124,7 @@ else:
     # Inertia (elbow) plot for KMeans only
     if show_inertia:
         st.header('KMeans Inertia Plot (Elbow Method)')
-        inertia_range = st.slider('Select range for number of clusters (elbow plot):', min_value=2, max_value=15, value=(2, 10))
+        inertia_range = st.slider('Select range for number of clusters (elbow plot):', min_value=2, max_value=50, value=(2, 10))
         inertias = []
         cluster_range = range(inertia_range[0], inertia_range[1] + 1)
         for k in cluster_range:
