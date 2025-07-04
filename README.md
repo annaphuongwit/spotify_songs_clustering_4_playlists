@@ -1,5 +1,7 @@
 # Moozik: Spotify Song Clustering & Playlist Explorer
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://voytecu314-spotify-songs-clustering-4-playlists-app-quwogw.streamlit.app/)
+
 A Streamlit web app for exploring, clustering, and generating playlists from a dataset of 5,000 Spotify songs. The app allows you to clean, visualize, and cluster songs using various machine learning techniques, and sample songs from each cluster to check playlist quality directly on Spotify.
 
 ## Features
